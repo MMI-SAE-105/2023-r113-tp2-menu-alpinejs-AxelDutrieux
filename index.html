@@ -33,14 +33,13 @@
     <!-- header>h1{Test de menu} -->
     <header>
      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
-      menu
+      <img src="public/icones/Menu.svg" alt="Menu">
     </button>
       <h1>Test</h1>
       <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
         <ul>
-          <li><a href="#">item 1</a></li>
-          <li><a href="#">item 2</a></li>
-          <li><a href="#">item 3</a></li>
+          <li><a href="./cats/index.html">Les chats</a></li>
+          <li><a href="./dogs/index.html">Les chiens</a></li>
         </ul>
       </nav>
     </header>
