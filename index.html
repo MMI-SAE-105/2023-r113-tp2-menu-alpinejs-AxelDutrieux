@@ -8,16 +8,6 @@
   <title>Test menu</title>
   <script defer src="https://unpkg.com/alpinejs"></script>
   <style>
-    .cats {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: #fff;
-      display: grid;
-      place-content: center;
-    }
     .menu {
       position: fixed;
       top: 0;
@@ -33,10 +23,6 @@
       position: relative;
       z-index: 10;
     }
-    .catsBtn {
-      position: relative;
-      z-index: 10;
-    }
 
     .noscroll,
     .noscroll body {
@@ -49,23 +35,28 @@
   <!-- https://emmet.io/ -->
   <!-- header>h1{Test de menu} --> 
   <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
-    menu
+    <img src="./public/icones/Menu.svg" alt="MenuIcon">
   </button>
-  <h1>Test</h1>
+  <h1>Chat ou chien ?</h1>
   <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
     <ul>
       <h1>Les chats</h1>
       <ul>
-        <li><a href="">Pourquoi les chats ?</a></li>
-        <li><a href="">Chat 1</a></li>
-        <li><a href="">Chat 2</a></li>
+        <li><a href="./cats/index.html">Pourquoi les chats ?</a></li>
+        <li><a href="./cats/chat-1.html">Chat 1</a></li>
+        <li><a href="./cats/chat-2.html">Chat 2</a></li>
       </ul>
       <h1>Les chiens</h1>
+      <ul>
+        <li><a href="./dogs/index.html">Pourquoi les chiens ?</a></li>
+        <li><a href="./dogs/chien-1.html">Chien 1</a></li>
+        <li><a href="./dogs/chien-2.html">Chien 2</a></li>
+      </ul>
     </ul>
   </nav>
   
   <!-- h2>lorem2^p>lorem -->
-  <h2>Lorem, ipsum.</h2>
+  <h2>Pouquoi choisir ?</h2>
   <p>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
     mollitia adipisci alias error laboriosam numquam incidunt magni eum eos
