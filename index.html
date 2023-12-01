@@ -1,75 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Test menu</title>
-  <script defer src="https://unpkg.com/alpinejs"></script>
-  <style>
-    .menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: #fff;
-      display: grid;
-      place-content: center;
-    }
-
-    .header_menuBtn {
-      position: relative;
-      z-index: 10;
-    }
-    .returnBtn {
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 10;
-    }
-
-    .noscroll,
-    .noscroll body {
-      overflow: hidden;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
 </head>
-
+<a href="./fr/index.html">fr</a>
+<a href="./en/index.html">en</a>
 <body>
-  <!-- https://emmet.io/ -->
-  <!-- header>h1{Test de menu} --> 
-  <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
-    <img src="./public/icones/Menu.svg" alt="MenuIcon">
-  </button>
-  <h1>Chat ou chien ?</h1>
-  <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-    <ul>
-      <h1>Les chats</h1>
-      <ul>
-        <li><a href="./cats/index.html">Pourquoi les chats ?</a></li>
-        <li><a href="./cats/chat-1.html">Chat 1</a></li>
-        <li><a href="./cats/chat-2.html">Chat 2</a></li>
-      </ul>
-      <h1>Les chiens</h1>
-      <ul>
-        <li><a href="./dogs/index.html">Pourquoi les chiens ?</a></li>
-        <li><a href="./dogs/chien-1.html">Chien 1</a></li>
-        <li><a href="./dogs/chien-2.html">Chien 2</a></li>
-      </ul>
-    </ul>
-  </nav>
-  
-  <!-- h2>lorem2^p>lorem -->
-  <h2>Pouquoi choisir ?</h2>
-  <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
-    mollitia adipisci alias error laboriosam numquam incidunt magni eum eos
-    nemo aliquid pariatur quam voluptates animi laudantium, aperiam
-    consectetur nobis enim.
-  </p>
-
+    
 </body>
-
 </html>
